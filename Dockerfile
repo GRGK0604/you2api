@@ -28,14 +28,14 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 
 # 设置环境变量
-ENV PORT=8080
+ENV PORT=10012
 ENV ENABLE_PROXY=false
 ENV PROXY_URL=""
 ENV PROXY_TIMEOUT_MS=5000
 ENV LOG_LEVEL=info
 
 # 暴露端口
-EXPOSE 8080
+EXPOSE 10012
 
 # 运行应用
 CMD ["./main"] 
